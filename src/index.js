@@ -1,5 +1,4 @@
 import jQuery from 'jquery';
-// import bootstrap from 'bootstrap';
 import "./scss/style.scss"
 
 const app = (a, b) => {

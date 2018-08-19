@@ -1,15 +1,29 @@
-@import '~reset-css/reset';
+html {
+  min-height: 100%;
+}
+
+body {
+  background: url("../img/bg.jpg") center no-repeat;
+  background-size: cover;
+  min-height: 100%;
+}
 
 h1 {
-    font-size: 40px;
-    color: red;
-    text-align: center;
+  font-size: 42px;
+  color: red;
+  text-align: center;
+  margin: 50px 0;
 }
 
 #demo {
-    background: deepskyblue;
-    color: #ffffff;
-    font-size: 33px;
-    text-align: center;
-    padding: 30px 0;
+  background: deepskyblue;
+  color: #ffffff;
+  font-size: 33px;
+  text-align: center;
+  padding: 30px 0;
+}
+
+img {
+  display: block;
+  margin: 30px auto 0;
 }

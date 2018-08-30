@@ -5,6 +5,10 @@
 #### Include: 
 - reset-css
 - jquery 3
+- Replace all SVG images with inline SVG (svg.js)
+
+> Note that you need to set the IMG to have a class of svg:   
+> `<img class="svg" url="example.svg">`
 
 
 #### Check the dist after build

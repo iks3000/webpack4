@@ -1,4 +1,5 @@
 // Webpack v4
+'use strict';
 const path = require('path');
 const HtmlWebpackPlugin = require('html-webpack-plugin');
 const WebpackMd5Hash = require('webpack-md5-hash');
@@ -36,10 +37,26 @@ module.exports = {
                 use:  [  MiniCssExtractPlugin.loader, 'css-loader', 'postcss-loader', 'sass-loader']
             },
             {
-                test: /\.(jpe?g|png|webp|gif|otf|ttf|woff|woff2|ani|ico)$/,
+                test: /\.(jpe?g|png|webp|gif|ani|ico)$/,
                 loader: "file-loader",
                 options: {
                     name: "img/[name].[hash:20].[ext]",
+                    limit: 10000
+                }
+            },
+            {
+                test: /\.(svg)$/,
+                loader: "file-loader",
+                options: {
+                    name: "svg/[name].[hash:20].[ext]",
+                    limit: 10000
+                }
+            },
+            {
+                test: /\.(ttf|otf|eot|woff|woff2)$/,
+                loader: "file-loader",
+                options: {
+                    name: "fonts/[name].[hash:20].[ext]",
                     limit: 10000
                 }
             },

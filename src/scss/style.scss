@@ -31,7 +31,8 @@ h1 {
   color: #ffffff;
   font-size: 33px;
   text-align: center;
-  padding: 30px 0;
+  height: 60px;
+  line-height: 60px;
 }
 
 //------ CSS Animation
@@ -47,6 +48,7 @@ img {
 
 .webpack {
   animation: rotating 10s linear infinite;
+  cursor: pointer;
 }
 
 
@@ -56,12 +58,13 @@ img {
   justify-content: space-evenly;
 
   .logo-img {
-    width: 35px;
+    width: 85px;
   }
 
   .logo-img path {
     fill: #94d31b;
     transition: ease-in-out 0.25s;
+    cursor: pointer;
     &:hover {
       fill: red;
     }
